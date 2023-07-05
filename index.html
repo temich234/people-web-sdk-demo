@@ -94,7 +94,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       updateCartView('cart');
       
       const user = getUser();
-      if (user && user.email) {
+      if (user && user.phone) {
           window.dataLayer.push({'product_name': itemName, 'product_price': price, 'qty': 1, 'event': 'add_to_cart'});
           console.log('Item Added to Cart');
         // await pe.track('addtocart', { item: itemName, price: price, quantity: 1 });
